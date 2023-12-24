@@ -453,6 +453,7 @@ html {
   height: 100vh;
   background-color: #fff; /* Adjust background color */
   transition: left 0.5s ease-in-out; /* Transition for left property */
+  z-index: 100000000000000;
 }
 
 .hidden-menu.show-menu {

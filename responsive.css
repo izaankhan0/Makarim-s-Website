@@ -121,6 +121,10 @@
         align-items: flex-start;
         text-align: center;
     }
+    .h6-txt.jam-active{
+
+        transform: scale(1);
+    }
 }
 
 @media (max-width: 370px){
