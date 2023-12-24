@@ -11,6 +11,15 @@
 </head>
 
 <body>
+
+
+
+  <div id="preloader">
+
+  </div>
+
+
+
   <div class="container">
     <div class="sub-container">
       <div class="lines">
@@ -22,9 +31,13 @@
         </div>
       </div>
       <div class="landing-page">
-        <nav>
+        <div class="menu-icon">
+          <p>Menu</p>
+        </div>
+        <nav class="hidden-menu">
           <ul>
-            <a href="#home">
+            <p class="close">Close X</p>
+            <a>
               <li>Home</li>
             </a>
             <a href="#about">
@@ -34,7 +47,7 @@
               <li>Services</li>
             </a>
             <div class="main-li-div">
-              <a href="#home">
+              <a>
                 <p id="main-li">
                   Precise<span class="full-stop">.</span>
                 </p>
@@ -51,21 +64,50 @@
             </a>
           </ul>
         </nav>
-        <div class="landing-text" id="#home">
-          <h1>Precise</h1>
+        <nav>
+          <ul>
+            <a>
+              <li>Home</li>
+            </a>
+            <a href="#about">
+              <li>About</li>
+            </a>
+            <a href="#services">
+              <li>Services</li>
+            </a>
+            <div class="main-li-div">
+              <a onclick="reloadPage()">
+                <p id="main-li">
+                  Precise<span class="full-stop">.</span>
+                </p>
+              </a>
+            </div>
+            <a href="#work">
+              <li>Work</li>
+            </a>
+            <a href="#reviews">
+              <li>Reviews</li>
+            </a>
+            <a href="#contact">
+              <li>Contact</li>
+            </a>
+          </ul>
+        </nav>
+        <div class="landing-text" id="home">
+          <h1 class="jam animation-land animation-land-1">Precise</h1>
 
-          <p>
+          <p class="jam animation-land animation-land-2">
             I'm Abdul Azeem Makarim A Graphic <br />Designer Based In Pakistan
           </p>
         </div>
       </div>
-      <div class="about" id="#about">
-        <h2>About Me</h2>
+      <div class="about" id="about">
+        <h2 class="h2-testing jam">About Me</h2>
         <div class="about-details">
           <div class="about-pic">
-            <img class="about-image-pure" src="./images/azeem.png" alt="" />
+            <img class="about-image-pure jam" src="./images/azeem.png" alt="" />
           </div>
-          <div class="about-txt">
+          <div class="about-txt jam">
             <h3>We can make it together</h3>
 
             <p class="about-para1">
@@ -84,23 +126,23 @@
           </div>
         </div>
       </div>
-      <div class="services">
-        <h4>My Services</h4>
+      <div class="services" id="services">
+        <h4 class="h4-testing jam">My Services</h4>
         <div class="services-num">
 
-          <div class="services-all service1">
+          <div class="services-all service1 jam">
             <img src="./images/GD.png" alt="">
             <h5>Graphic Designing</h5>
             <p>Creating visual content using software like Adobe Photoshop and Illustrator. Involves design elements
               like typography, imagery, and layout techniques for branding and digital media.</p>
           </div>
-          <div class="services-all service2">
+          <div class="services-all service2 jam">
             <img src="./images/3D.png" alt="">
             <h5>Conputer Aided Design (CAD)</h5>
             <p>CAD uses software to create accurate 2D and 3D models for engineering, architecture, and manufacturing.
               It streamlines design, aiding in precise technical drawings and reducing errors before production</p>
           </div>
-          <div class="services-all service3">
+          <div class="services-all service3 jam">
             <img src="./images/C.png" alt="">
             <h5>Python</h5>
             <p>A versatile programming language used in web development, data analysis, and AI. Known for simplicity and
@@ -108,14 +150,15 @@
           </div>
         </div>
       </div>
-      <div class="reviews">
-        <h6>My Happiest Clients</h6>
-        <div class="review-box">
+      <div class="reviews" id="reviews">
+        <h6 class="jam h6-txt">My Happiest Clients</h6>
+        <div class="review-box jam">
           <div class="reviews-subs review-sub1 active">
             <div class="rev-text">
               <p>
               <p class="quote">“</p>
-              I have had the pleasure of collaborating with Azeem on a graphic design project, and I must say, his work
+              I have had the pleasure of collaborating with Azeem on a graphic design project, and I must say, his
+              work
               is not just visually appealing, it's downright captivating! His artistry breathes life into every pixel,
               and his dedication to perfection is unparalleled. If you're seeking top-tier graphic design services,
               Azeem is the maestro you need.
@@ -186,15 +229,14 @@
         <!-- not available yet -->
       </div>
 
-      <div class="contact">
-        <h6>Get in Touch</h6>
+      <div class="contact" id="contact">
 
       </div>
 
 
       <footer>
 
-        <a href="">
+        <a onclick="scrollToTop()">
           <p id="main-li">
             Precise<span class="full-stop">.</span>
           </p>
@@ -204,7 +246,9 @@
           <li>Facebook</li>
           <li>Twitter</li>
           <li>Linkedin</li>
-          <li>Reload</li>
+          <a href="./index.html">
+            <li>Reload</li>
+          </a>
         </ol>
 
         <div class="credits">
